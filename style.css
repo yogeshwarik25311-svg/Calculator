@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    width: 340px;
+    background-color: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.display-container {
+    background-color: #0a0a0a;
+    border: 1px solid #222;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-operand {
+    color: #666666;
+    font-size: 1rem;
+    min-height: 1.2rem;
+}
+
+.current-operand {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    border: 1px solid #262626;
+    outline: none;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 18px 0;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    user-select: none;
+}
+
+.btn:hover {
+    background-color: #2a2a2a;
+    border-color: #404040;
+}
+
+.btn:active {
+    transform: scale(0.96);
+    background-color: #333333;
+}
+
+.btn-secondary {
+    background-color: #2b2b2b;
+    color: #d1d1d1;
+}
+
+.btn-secondary:hover {
+    background-color: #383838;
+}
+
+.btn-operator {
+    background-color: #262626;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.btn-operator:hover {
+    background-color: #3d3d3d;
+}
+
+.btn-equal {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-equal:hover {
+    background-color: #e6e6e6;
+}
+
+.btn-equal:active {
+    background-color: #cccccc;
+}
+
+.btn-zero {
+    grid-column: span 1;
+}
